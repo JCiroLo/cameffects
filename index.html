@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="icon" href="src/favicon.ico" />
+    <link rel="stylesheet" href="src/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <title>Welcome</title>
+  </head>
+  <body>
+    <noscript>
+      <strong
+        >We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work
+        properly without JavaScript enabled. Please enable it to
+        continue.</strong
+      >
+    </noscript>
+    <div id="app">
+      <div class="modes">
+        <div class="mode">
+          <label>ASCII</label>
+          <input
+            type="radio"
+            name="mode"
+            value="ascii"
+            oninput="changeMode(this)"
+          />
+        </div>
+        <div class="mode">
+          <label>SQUARES</label>
+          <input
+            type="radio"
+            name="mode"
+            value="squares"
+            oninput="changeMode(this)"
+          />
+        </div>
+        <div class="mode">
+          <label>CIRCLES</label>
+          <input
+            type="radio"
+            name="mode"
+            value="circles"
+            oninput="changeMode(this)"
+          />
+        </div>
+      </div>
+      <div class="actions">
+        <div class="motion-actions">
+          <button onclick="stop()">
+            <i class="fal fa-pause fa-fw"></i><label>PAUSE</label>
+          </button>
+          <button onclick="play()">
+            <i class="fal fa-play fa-fw"></i><label>PLAY</label>
+          </button>
+        </div>
+        <div class="ascii-selector">
+          <label>ASCII</label>
+          <input type="text" oninput="handleInput(this)" />
+        </div>
+        <div class="size-actions">
+          <label>QUALITY</label>
+          <button onclick="resize(-1)">
+            <i class="fal fa-plus fa-fw"></i>
+          </button>
+          <button onclick="resize(1)">
+            <i class="fal fa-minus fa-fw"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/p5.min.js"
+      integrity="sha512-NxocnqsXP3zm0Xb42zqVMvjQIktKEpTIbCXXyhBPxqGZHqhcOXHs4pXI/GoZ8lE+2NJONRifuBpi9DxC58L0Lw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./src/sketch.js"></script>
+  </body>
+</html>

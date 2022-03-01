@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700;900&family=Ubuntu:wght@300;400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Courier";
+}
+
+body {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+canvas {
+  display: block;
+}
+
+i {
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  width: 18px !important;
+  font-size: 18px;
+}
+
+button {
+  padding: 12px;
+}
+
+#app {
+  position: relative;
+}
+#app .container {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  border: 3px solid white;
+  padding: 10px;
+}
+#app .container .row {
+  display: flex;
+}
+#app .modes {
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-65%);
+}
+#app .modes .mode {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 10px;
+  width: 70px;
+}
+#app .modes .mode label {
+  color: white;
+}
+#app .modes .mode input {
+  width: 30px;
+  height: 30px;
+  background-color: black !important;
+  border: 3px solid white !important;
+}
+#app .modes .mode input:checked {
+  background-color: red;
+}
+#app .actions {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  bottom: 0;
+  right: 20px;
+  left: 20px;
+  transform: translateY(50%);
+}
+#app .actions .motion-actions {
+  display: flex;
+}
+#app .actions .motion-actions button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5px;
+  background-color: #000;
+  color: white;
+  border: 3px solid white;
+  cursor: pointer;
+}
+#app .actions .motion-actions button label {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  width: max-content;
+  color: white;
+  background-color: black;
+  font-weight: 700;
+  font-size: 12px;
+  transform: translateY(75%);
+}
+#app .actions .ascii-selector {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+#app .actions .ascii-selector label {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  width: max-content;
+  color: white;
+  background-color: black;
+  font-weight: 700;
+  font-size: 12px;
+  transform: translateY(50%);
+}
+#app .actions .ascii-selector input {
+  padding: 5px 10px;
+  height: 30px;
+  width: 10vw;
+  background-color: black;
+  border: 3px solid white;
+  color: white;
+  outline: none;
+  box-sizing: none;
+}
+#app .actions .size-actions {
+  position: relative;
+  display: flex;
+}
+#app .actions .size-actions label {
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  width: max-content;
+  color: white;
+  background-color: black;
+  font-weight: 700;
+  transform: translateY(50%);
+}
+#app .actions .size-actions button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5px;
+  background-color: #000;
+  color: white;
+  border: 3px solid white;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=styles.css.map */
